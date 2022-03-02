@@ -1,0 +1,173 @@
+* {box-sizing: border-box;}
+
+img {
+          display: block;
+		  text-align: center;
+          
+          max-width: 100%;
+		  height: auto;
+          padding: 2px;
+		  background-color: #bcb9b9;
+		  margin-left: auto;
+		  margin-right: auto;
+          
+		  
+        }
+		
+header {
+background-color: #e0dede;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+
+margin: 0;
+}
+
+h1 a:link {color: #175f73;
+	text-decoration: none;
+
+}
+h1 a:visited {color: #175f73;
+	text-decoration: none;
+}
+
+h1 a:hover {color: #1b3f49;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+main {display: grid;
+	background-color: #f7f2f2;
+	margin: 0;
+	padding-top: 10px;
+}
+
+h2 {grid-row: 1/2;
+	grid-column: 1/2;
+	color: #000000;
+	margin-left: 0.5em;
+}
+
+h3 a:link {color: #000000;
+	text-decoration: none;
+	text-align: left;
+	}
+	
+h3 a:visited {color: #000000;
+	text-decoration: none;
+	text-align: left;
+	}
+	
+h3 a:hover {color: #1b3f49;
+	text-decoration: none;
+	text-align: left;
+	}
+
+
+
+footer {color: #175f73; background-color: #dedcdc;
+padding-top: 7px;
+padding-bottom: 7px;
+
+}
+
+footer a:link {color: #000000;}
+footer a:visited {color: #000000;}
+footer a:hover {color: #1b3f49;}
+
+
+#pdf1 {grid-row: 2/3;
+		grid-column: 1/2;
+		
+		text-align: center;
+		padding: 7px;
+		
+		background-color: #e0dede;
+		margin-top: 3px;
+		margin-bottom: 5px;
+		
+}
+
+#pdf2 {grid-row: 3/4;
+		grid-column: 1/2;
+		
+		text-align: center;
+		padding: 7px;
+		
+		background-color: #e0dede;
+		margin-top: 3px;
+		margin-bottom: 5px;
+}
+
+
+#pdf3 {grid-row: 4/5;
+		grid-column: 1/2;
+		
+		text-align: center;
+		padding: 7px;
+		
+		background-color: #e0dede;
+		margin-top: 3px;
+		margin-bottom: 5px;
+		
+}
+		
+		
+@media (min-width: 481px) {
+
+	
+
+
+main {display: grid;
+	width: 100%;
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	
+}
+
+h2 {grid-row: 1/2;
+	grid-column: 1/4;
+}
+
+#pdf1 {grid-row: 2/3;
+		grid-column: 1/2;
+		margin-left: 1em;
+		
+}
+
+#pdf2 {grid-row: 2/3;
+		grid-column: 2/3;
+		
+}
+
+#pdf3 {grid-row: 2/3;
+		grid-column: 3/4;
+		margin-right: 1em;
+		
+}
+
+
+}
+
+
+@media (min-width: 769px) {
+	
+main {width: 85%;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 60px;
+	
+	
+}
+
+}		
